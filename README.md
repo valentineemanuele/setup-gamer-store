@@ -12,5 +12,5 @@ Passos para instalação do projeto:
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-username/seu-repositorio.git
-   cd seu-repositorio
+   git clone https://github.com/valentineemanuele/setup-gamer-store.git
+   cd setup-gamer-store
