@@ -1,16 +1,25 @@
-# setup-gamer-store
-SITE PARA PERIFÉRICOS 
+Setup Gamer Store
+Descrição
+Projeto para criar um site focado na venda de periféricos gamers.
 
-# SETUP GAMER STORE
+Objetivo
+Desenvolver um site que ofereça uma interface intuitiva para que os usuários possam acessar e comprar periféricos voltados para gamers.
 
-Descrição curta do projeto.  
-**Objetivo:** Breve descrição do que o projeto faz.
+Instalação
+Passos para instalação:
+Clone o repositório:
 
-## Instalação
+bash
+Copiar código
+git clone https://github.com/valentineemanuele/setup-gamer-store.git
+cd setup-gamer-store
+Instale as dependências (caso necessário):
 
-Passos para instalação do projeto:
+bash
+Copiar código
+npm install
+Inicie o projeto com o servidor local:
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/valentineemanuele/setup-gamer-store.git
-   cd setup-gamer-store
+bash
+Copiar código
+npm start
