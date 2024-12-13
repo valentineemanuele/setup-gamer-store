@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer Setup Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-purple: #8a2be2;
+            --dark-black: #121212;
+            --white: #ffffff;
+            --shadow-dark: rgba(0, 0, 0, 0.7);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--dark-black);
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 8px var(--shadow-dark);
+            color: var(--white);
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .product-card {
+            background: var(--primary-purple);
+            border-radius: 10px;
+            width: 250px;
+            padding: 20px;
+            box-shadow: 0px 4px 15px var(--shadow-dark);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 20px var(--shadow-dark);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-card h2 {
+            font-size: 1.5rem;
+            margin: 15px 0;
+        }
+
+        .product-card p {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        .product-card button {
+            background: var(--white);
+            color: var(--dark-black);
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .product-card button:hover {
+            background: var(--primary-purple);
+            color: var(--white);
+        }
+
+        .contact, .about, .cart {
+            width: 100%;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: var(--dark-black);
+            box-shadow: 0px 4px 15px var(--shadow-dark);
+            border-radius: 10px;
+        }
+
+        .contact h2, .about h2, .cart h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .contact form input, .contact form textarea, .contact form button {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .contact form button {
+            background: var(--primary-purple);
+            color: var(--white);
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .contact form button:hover {
+            background: var(--white);
+            color: var(--dark-black);
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        .cart ul {
+            list-style: none;
+        }
+
+        .cart ul li {
+            font-size: 1rem;
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cart ul li button {
+            background: var(--primary-purple);
+            color: var(--white);
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .cart ul li button:hover {
+            background: var(--white);
+            color: var(--dark-black);
+        }
+
+        .balloon-effect {
+            animation: glow 1.5s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 10px var(--primary-purple), 0 0 20px var(--primary-purple);
+            }
+            100% {
+                box-shadow: 0 0 20px var(--primary-purple), 0 0 40px var(--primary-purple);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gamer Setup Store</h1>
+    </header>
+    <section class="products">
+        <div class="product-card balloon-effect">
+            <img src="imagem1.jpg" alt="Mouse Gamer">
+            <h2>Mouse Gamer RGB</h2>
+            <p>Alta precisão e iluminação personalizável.</p>
+            <button>Comprar Agora</button>
+        </div>
+        <div class="product-card balloon-effect">
+            <img src="imagem2.jpg" alt="Teclado Mecânico">
+            <h2>Teclado Mecânico</h2>
+            <p>Switches mecânicos de alta qualidade.</p>
+            <button>Comprar Agora</button>
+        </div>
+        <div class="product-card balloon-effect">
+            <img src="imagem3.jpg" alt="Headset Surround">
+            <h2>Headset Surround</h2>
+            <p>Som 7.1 para máxima imersão.</p>
+            <button>Comprar Agora</button>
+        </div>
+        <div class="product-card balloon-effect">
+            <img src="imagem4.jpg" alt="Cadeira Gamer">
+            <h2>Cadeira Gamer</h2>
+            <p>Conforto para longas sessões de jogo.</p>
+            <button>Comprar Agora</button>
+        </div>
+        <div class="product-card balloon-effect">
+            <img src="imagem5.jpg" alt="Monitor 144Hz">
+            <h2>Monitor 144Hz</h2>
+            <p>Taxa de atualização ultrarrápida.</p>
+            <button>Comprar Agora</button>
+        </div>
+        <div class="product-card balloon-effect">
+            <img src="imagem6.jpg" alt="Microfone USB">
+            <h2>Microfone USB</h2>
+            <p>Captação de áudio cristalina.</p>
+            <button>Comprar Agora</button>
+        </div>
+        <div class="product-card balloon-effect">
+            <img src="imagem7.jpg" alt="Mousepad RGB">
+            <h2>Mousepad RGB</h2>
+            <p>Iluminação sincronizável.</p>
+            <button>Comprar Agora</button>
+        </div>
+        <div class="product-card balloon-effect">
+            <img src="imagem8.jpg" alt="Placa de Vídeo RTX">
+            <h2>Placa de Vídeo RTX</h2>
+            <p>Desempenho incrível em jogos.</p>
+            <button>Comprar Agora</button>
+        </div>
+        <div class="product-card balloon-effect">
+            <img src="imagem9.jpg" alt="Fonte Modular">
+            <h2>Fonte Modular</h2>
+            <p>Eficiência e organização.</p>
+            <button>Comprar Agora</button>
+        </div>
+        <div class="product-card balloon-effect">
+            <img src="imagem.10.jpg" alt="Gabinete RGB">
+            <h2>Gabinete RGB</h2>
+            <p>Estilo e funcionalidade.</p>
+            <button>Comprar Agora</button>
+        </div>
+        <div class="product-card balloon-effect">
+            <img src="imagem11.jpg" alt="Controlador">
+            <h2>Controlador</h2>
+            <p>Compatível com PC e consoles.</p>
+            <button>Comprar Agora</button>
+        </div>
+        <div class="product-card balloon-effect">
+            <img src="imagem12.jpg" alt="Webcam HD">
+            <h2>Webcam HD</h2>
+            <p>Imagens nítidas para streaming.</p>
+            <button>Comprar Agora</button>
+        </div>
+        <div class="product-card balloon-effect">
+            <img src="imagem13,jpg.jpg" alt="SSD NVMe">
+            <h2>SSD NVMe</h2>
+            <p>Velocidade extrema de leitura e gravação.</p>
+            <button>Comprar Agora</button>
+        </div>
+        <div class="product-card balloon-effect">
+            <img src="imagem14.jpg" alt="Fita LED RGB">
+            <h2>Fita LED RGB</h2>
+            <p>Iluminação personalizada para seu setup.</p>
+            <button>Comprar Agora</button>
+        </div>
+    </section>
+</body>
+</html>
